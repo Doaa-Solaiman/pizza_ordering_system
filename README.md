@@ -1,4 +1,4 @@
-# Pizza Ordering System
+# 🍕Pizza Ordering System
 
 ## Project Description
 
@@ -16,7 +16,7 @@ Projects like shopping carts and ordering systems are considered fundamental lea
 
 ---
 
-## Main Features
+## 🚀Main Features
 
 * Display available pizza menu with images and prices
 * Add pizzas to the shopping cart
@@ -33,7 +33,7 @@ Projects like shopping carts and ordering systems are considered fundamental lea
 
 ---
 
-## Technologies Used
+## 🛠 Technologies Used
 
 * React.js
 * JavaScript
@@ -43,7 +43,7 @@ Projects like shopping carts and ordering systems are considered fundamental lea
 
 ---
 
-## Learning Focus
+## 📚 Learning Focus
 
 This project was mainly developed to improve understanding of:
 
@@ -57,7 +57,7 @@ This project was mainly developed to improve understanding of:
 
 ---
 
-## Important Note
+## 📌 Important Note
 
 This project does not include backend development or database integration.
 
