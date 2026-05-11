@@ -1,0 +1,771 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: 400;
+	font-style: normal;
+	font-family: "Benne", serif;
+}
+
+
+.page {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.header {
+	height: 80px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:rgb(255, 134, 70);
+	
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+}
+
+.menu {
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin: 16px;
+}
+
+.price{
+	font-size: 17px;
+	font-weight: 400;
+	margin-left: 18px;
+}
+.blueButton {
+	background-color: rgb(255, 153, 51);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-size: 16px;
+	margin: 5px;
+	padding: 8px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+
+.blueButton:hover {
+	background-color:rgb(255, 219, 70);
+	color: white;
+}
+
+.sidebar {
+	min-width: 40%;
+	padding-left: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+	border-radius: 10px;
+}
+
+
+
+h1 {
+	font-size: 50px;
+	color: orangered;
+	margin: 0;
+
+}
+
+#app {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	padding: 8px;
+}
+
+
+.group {
+	margin-left: 15px;
+	flex: 1;
+
+}
+
+
+.menu {
+	.card {
+		flex-basis: 44%;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+		border-radius: 10px;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+// button format is not working on CSS
+/*.cardbutton {
+	background-color: "royalblue";
+	margin: '5px';
+	padding: '8px';
+	border-radius: '5px';
+	border: 'none';
+	color: 'white';
+
+}*/
+
+
+
+.sideBarContainer .checkOut {
+	width: 100px;
+	height: 35px;
+	margin-bottom: 15px;
+	border: none;
+	border-radius: 3px;
+	background-color:rgb(255, 134, 70);;
+	color: white;
+	margin-left: 75%;
+	font-size: 17px;
+	transition: all 0.3s;
+	cursor: pointer;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.sideBarContainer .checkOut:hover {
+	background-color: rgb(239, 129, 18);;
+
+}
+
+
+
+/*Formattimg styling for the sideBar */
+.sideBar {
+	width: "40%";
+	margin-left: "20px";
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+
+}
+
+
+.item {
+	margin-left: 20px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	transition: opacity 0.5s ease;
+	/* Add transition for opacity */
+}
+
+.hidden {
+	opacity: 0;
+	pointer-events: none;
+	/* Disable pointer events for hidden items */
+}
+
+/*=================================================================================================*/
+
+// Form style
+
+.biggerFormContainer {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 253, 251);
+	padding: 20px;
+}
+
+.smallerFormContainer {
+	width: 500px;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+
+}
+
+
+.biggerFormContainer .smallerFormContainer h5 {
+	font-size: 20px;
+	color: rgb(205,127,50);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.firstPart,
+.secondPart,
+.thirdPart,
+.forthPart {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+label {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+
+label:after {
+	content: "*";
+	color: rgb(255, 0, 0);
+}
+
+input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.thirdPart input,
+.forthPart input {
+	flex: 1;
+}
+
+.formButton {
+	width: 150px;
+	margin: auto;
+	background-color: rgb(205,127,50);
+	color: white;
+	padding: 10px;
+	margin-top: 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: "Benne", serif;
+}
+
+.formButton:hover {
+	background-color: #202720;
+}
+
+/*=================================================================================================*/
+
+// OrderSummary Component
+
+
+.mainBox {
+
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.box {
+	text-align: center;
+	margin: "auto";
+	width: "25%";
+	height: "60%";
+	border: "solid 1px black";
+	border-radius: "15px";
+	padding: "30px";
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	padding: 30px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.box button {
+	padding: 9px;
+	margin: 10px;
+	font-size: 17px;
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+
+.close {
+
+	font-weight: bold;
+	width: 30px;
+	color: red;
+	float: right;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	margin-top: none;
+	margin-right: none;
+	font-size: 20px;
+}
+
+.box .edit {
+	background-color: rgb(255, 128, 64);
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+	color:rgb(255, 255, 255);
+	border: none;
+	transition: 0.5s;
+}
+
+
+.box .edit:hover {
+	color:rgb(255, 128, 64);
+	background-color: rgb(255, 255, 255);
+}
+
+.box .confirm {
+	background-color:rgb(0, 164, 0);
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+	color: white;
+	border: none;
+	transition: 0.5s;
+
+}
+
+
+.box .confirm:hover {
+	color: rgb(255, 255, 255);
+	background-color:green;
+
+}
+
+/*=================================================================================================*/
+
+//Confirmation
+
+.styles {
+	width: 400px;
+	height: 166px;
+	margin: auto;
+	margin-top:30px;
+	padding: 10px;
+	justify-content: center;
+	text-align: center;
+	border: none;
+	background-color:rgb(0, 164, 0);
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	border-radius: 10px;
+	color: white;
+	font-size: 22px;
+}
+
+.styles .timeEstimated{
+	color:#f2f2f2;
+	font-size: 18px;
+}
+
+.ok {
+	width: 75px;
+	height: 30px;
+	background-color:rgb(0, 164, 0);
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	color: white;
+	cursor: pointer;
+	transition: 0.5s;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.ok:hover {
+	background-color: rgb(255, 255, 255);
+	color:rgb(0, 164, 0);
+}
+
+/*=======================================================================================*/
+// OrderManagement
+
+table,
+th,
+td {
+	border: 2px solid rgb(255, 255, 255);
+	border-collapse: collapse;
+
+}
+
+.mainBody {
+	display: flex;
+	height: 100vh;
+	border-radius: 10px;
+	background-color: rgb(27, 161, 226);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.pageBody {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: 70%;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background-color: white;
+	padding: 25px;
+	border-radius: 50% 20% / 10% 40%;
+	
+}
+
+.whiteBody {
+	width: 95%;
+	height: 80%;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	text-align: center;
+	background-color: rgb(192, 192, 192, 0.2);
+	border-radius: 10px;
+	margin-top: 20px;
+	margin: auto;
+	font-size: 16px;
+	border-collapse: separate;
+	border-spacing: 10px;
+	margin: auto;
+}
+
+
+.download {
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-color:rgb(0, 164, 0);
+	border: 1px solid #13aa52;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 400;
+	outline: none;
+	outline: 0;
+	padding: 10px 25px;
+	text-align: center;
+	transform: translateY(0);
+	transition: transform 150ms, box-shadow 150ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.download:hover {
+	box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+	transform: translateY(-2px);
+	background-color: rgb(14, 126, 62);
+}
+
+//Search and filter
+
+.search-field{
+	padding: 10px 15px;
+	margin-top: 10px;
+	float: left;
+	min-width: 55%;
+	font-size: 1rem;
+	line-height: 1.5em;
+	color: rgb(0, 0, 0);
+	background-color: #FFF;
+	background-clip: padding-box;
+	border: 1px solid #C5C5C7;
+	border-radius: 6px;
+	-webkit-box-shadow: none;
+	flex-grow: 1;
+	border-right: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.search-submit{
+	background-color: rgb(67, 133, 255);
+	float: left;
+	margin-top: 10px;
+	color: #ffffff;
+	font-weight: 700;
+	text-decoration: none;
+	white-space: normal;
+	-webkit-transition: none;
+	transition: none;
+	cursor: pointer;
+	outline: 0;
+	padding: 14px 24px 13px;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	border-radius: 6px;
+	border-width: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	
+}
+.search-form .input-group{
+text-align:center;
+}
+
+
+
+
+
+
+.table tr {
+	border-bottom: 10px solid transparent;
+}
+
+.editPhoto {
+
+	background-color: rgb(230, 230, 230);
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	padding: 10px 12px;
+	text-align: center;
+	white-space: nowrap;
+	border: none;
+}
+
+.editInput{
+	font-size: 17px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+// For the orders Table analysis
+
+.mainDivTable {
+	width: 100%;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 0px;
+
+}
+
+
+.order-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: auto;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-top: 0px;
+}
+
+.order-table th,
+.order-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+.order-table th {
+	color: white;
+	background-color: rgb(27, 161, 226);
+}
+
+.order-row:nth-child(even) {
+	background-color: #f2f2f2;
+	transition: 0.9s;
+}
+
+.order-row:hover {
+	background-color: #ddd;
+}
+
+
+.analyze-title {
+	color: rgb(27, 161, 226);
+	background-color: rgb(229, 229, 229);
+	padding: 10px;
+	font-size: 35px;
+	letter-spacing: 5px;
+	border-radius: 25px 25px 0px 0px;
+}
+
+/*=======================================================================================*/
+
+//Kitchen
+
+.kitchen {
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	.navbar {
+		background-color :rgb(255, 153, 51);
+		height: 15%;
+		padding: 15px;
+		box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+		.kitchenTitle {
+			color: white;
+			font-size: 22px;
+			font-weight: bold;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			text-align: left;
+			margin-left: 5px;
+			text-shadow: 2px 2px 4px rgb(192, 192, 192);
+		}
+	}
+
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 20px;
+		gap: 20px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+		.card {
+			flex: 1 1 calc(25% - 20px);
+			max-width: calc(25% - 20px);
+			width: 100%;
+			position: relative;
+			height: auto;
+			padding: 20px;
+			border: none;
+			border-radius: 50px;
+			background: #fff;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+			p {
+				margin: 5px 0;
+			}
+
+			.prepare {
+				margin-top: auto;
+				margin-right: 5px;
+				display: inline-block;
+				background-color: rgb(255, 153, 51);
+				border: none;
+				border-radius: 12px;
+				color: #FFFFFF;
+				cursor: pointer;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 2.5;
+				padding: 0 1rem;
+				text-align: center;
+				white-space: nowrap;
+			}
+
+
+
+			.ready {
+				margin-top: auto;
+				margin-right: 15px;
+				display: inline-block;
+				background-color:rgb(0, 164, 0);
+				border: none;
+				border-radius: 12px;
+				color: #FFFFFF;
+				cursor: pointer;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 2.5;
+				padding: 0 1rem;
+				text-align: center;
+				white-space: nowrap;
+			}
+
+
+		}
+	}
+}
+
+/*========================================================================*/
+
+// Edit
+
+.mainbodyEdit {
+	width: 400%;
+	height: 100vh;
+	overflow: hidden;
+	margin:auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f3f3f3;
+	padding: 20px;
+}
+
+.formEdit {
+	width: 35%;
+	height: auto;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 35px;
+}
+
+.formEdit input[type="name"],
+.formEdit textarea {
+	width: 45%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+.radio-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.radio-group input[type="radio"],
+.radio-group input[type="name"] {
+	margin: 0 10px;
+	width: 50px;
+}
+
+.formEdit label {
+	margin-right: 20px;
+}
+
+.formEdit button {
+	padding: 10px 20px;
+	margin-right: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #4caf50;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+}
+
+.formEdit .deleteArticle {
+	background-color: #f44336;
+}
+
+

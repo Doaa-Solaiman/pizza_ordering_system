@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@fal-works/esbuild-plugin-global-externals": "^2.1.2",
+    "esbuild": "^0.19.4",
+    "esbuild-sass-plugin": "^2.15.0",
+    "fs": "^0.0.1-security",
+    "react-router-dom": "^6.22.1",
+    "wouter": "^3.0.1",
+    "wouter-preact": "^3.0.1"
+  }
+}
